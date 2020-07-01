@@ -6,8 +6,8 @@
 		<button type="submit">Log out</button>
 	</form>
 {% else %}
-	<a href="#">Sign up</a>
-	<a href="#">Log in</a>
+	<a href="{% url 'signup_user' %}">Sign up</a>
+	<a href="{% url 'login_user' %}">Log in</a>
 {% endif %}
 
 {% block content %}{% endblock %}
